@@ -1,9 +1,9 @@
 pipeline {
     environment {
         docker_image_name = "python3-unittests"
-        HTTP_PROXY = "${params.HTTP_PROXY}"
-        JENKINS_USER_ID = "${params.JENKINS_USER_ID}"
-        JENKINS_GROUP_ID = "${params.JENKINS_GROUP_ID}"
+        HTTP_PROXY = ""
+        JENKINS_USER_ID = "112"
+        JENKINS_GROUP_ID = "117"
     }
     agent {
         dockerfile {
